@@ -41,6 +41,9 @@ export default function PackageSection() {
               isActive={currentPackage === pkg.month}
             />
           ))}
+          <button className="bg-primary text-white px-6 py-4 rounded-[42px] w-full uppercase font-bold text-[18px] font-bold">
+            {t("package-button")}
+          </button>
         </div>
         <Image
           src="/images/package-divide.png"
@@ -49,14 +52,26 @@ export default function PackageSection() {
           height={531}
         />
         <div className="flex flex-col gap-4 w-full">
-          {packages.map((pkg) => (
-            <Package
-              key={pkg.month}
-              {...pkg}
-              setCurrentPackage={setCurrentPackage}
-              isActive={currentPackage === pkg.month}
-            />
-          ))}
+          <ul className="list-disc pl-4 flex flex-col gap-4">
+            <li>
+              Tư vấn kịch bản chăm sóc <b>khách hàng cá nhân hóa</b>  dựa trên lịch sử trò chuyện thực tế.
+            </li>
+            <li>
+              <b>Kết nối đa nền tảng:</b>  Messenger, Zalo OA, Pancake, Kiot Việt…: quản lý tập trung
+            </li>
+            <li>
+              Tích hợp lên đế <b> 10 fanpage/website</b>, cung cấp <b>100.000 tin nhắn/tháng</b> , tư vấn <b>300 sản phẩm</b> cùng lúc
+            </li>
+            <li>
+              <b>Thiết lập đa ngôn ngữ:</b> Tiếng Việt, Anh, Thái, Nhật, Trung – tiếp cận khách hàng quốc tế dễ dàng
+            </li>
+            <li>
+              <b>Cập nhật & học dữ liệu mới hàng tuần:</b> chatbot ngày càng thông minh, hiểu khách hàng hơn
+            </li>
+            <li>
+              <b>Hỗ trợ online 24/7 </b> – luôn sẵn sàng đồng hành cùng doanh nghiệp
+            </li>
+          </ul>
         </div>
       </div>
     </CommonSection>

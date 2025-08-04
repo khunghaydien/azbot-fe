@@ -2,6 +2,8 @@ import ServiceSection from "@/components/service-section";
 import IntroductionSection from "@/components/introduction-section";
 import MainHeader from "@/components/main-header";
 import PackageSection from "@/components/package-section";
+import WorkFlowSection from "@/components/work-flow-section";
+import FeedbackSection from "@/components/feedback-section";
 
 export default function page() {
   return (
@@ -10,6 +12,8 @@ export default function page() {
       <IntroductionSection />
       <ServiceSection />
       <PackageSection />
+      <WorkFlowSection />
+      <FeedbackSection />
     </div>
   );
 }
