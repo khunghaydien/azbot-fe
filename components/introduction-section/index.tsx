@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Introduction from "./introduction";
 import { useTranslations } from "next-intl";
+import PartnerIcons from "./partner-icons";
 
 export const IntroductionSection = () => {
   const t = useTranslations();
@@ -39,6 +40,9 @@ export const IntroductionSection = () => {
             className={item.className}
           />
         ))}
+      </div>
+      <div className="absolute bottom-0 left-0 w-full h-full inset-0 flex flex-col justify-center items-center gap-10">
+        <PartnerIcons />
       </div>
     </div>
   );

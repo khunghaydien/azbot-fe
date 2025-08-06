@@ -1,6 +1,13 @@
+"use client";
 import { useTranslations } from "next-intl";
 import CommonSection from "../common-section";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import Feedback from "./feedback";
+
 
 export default function FeedbackSection() {
     const t = useTranslations();
@@ -27,11 +34,28 @@ export default function FeedbackSection() {
         },
     ];
     return (
-        <CommonSection title={t("work-flow-title")} content={t("work-flow-content")}>
-            <div className="flex flex-col gap-4">
+        <CommonSection title={t("feedback-title")} content={t("feedback-content")}>
+            <div className="w-full">
+                <Swiper
+                    spaceBetween={24}
+                    slidesPerView={3}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    pagination={{
+                        clickable: true,
+                        dynamicBullets: true,
+                    }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                >
                 {feedbacks.map((feedback, index) => (
-                    <Feedback key={index} {...feedback} />
+                    <SwiperSlide key={index}>
+                        <Feedback {...feedback} />
+                    </SwiperSlide>
                 ))}
+                </Swiper>
             </div>
         </CommonSection>
     );
