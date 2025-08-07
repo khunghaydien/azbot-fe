@@ -27,11 +27,11 @@ export const IntroductionSection = () => {
       <Image
         src="/images/background-customer.png"
         alt="Background Customer"
-        width={1360}
-        height={100}
-        className="w-full h-full object-cover"
+        width={1920}
+        height={1080}
+        className="object-cover"
       />
-      <div className="absolute top-0 left-0 w-full h-full inset-0 flex flex-col justify-center items-center gap-10">
+      <div className="absolute top-0 left-0 w-full h-full inset-0 flex flex-col justify-center items-center gap-6">
         {introductionItems.map((item, index) => (
           <Introduction
             key={index}

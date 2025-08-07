@@ -30,7 +30,7 @@ export default function PackageSection() {
   ];
   const [currentPackage, setCurrentPackage] = useState<number | null>(1);
   return (
-    <CommonSection title={t("package-title")} content={t("package-content")}>
+    <CommonSection title={t("package-title")} content={t("package-content")} className="py-[70px]">
       <div className="flex flex-nowrap w-full items-center justify-center gap-8">
         <div className="flex flex-col gap-4 w-full">
           {packages.map((pkg) => (

@@ -1,8 +1,8 @@
 import React from "react";
 
 export type CommonSectionProps = {
-  title: string;
-  content: string;
+  title?: string;
+  content?: string;
   children: React.ReactNode;
   className?: string;
 };

@@ -34,7 +34,7 @@ export default function FeedbackSection() {
         },
     ];
     return (
-        <CommonSection title={t("feedback-title")} content={t("feedback-content")}>
+        <CommonSection title={t("feedback-title")} content={t("feedback-content")} className="py-[70px] bg-[#F5F5F6]">
             <div className="w-full">
                 <Swiper
                     spaceBetween={24}

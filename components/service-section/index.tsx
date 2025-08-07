@@ -43,7 +43,7 @@ export default function ServiceSection() {
     },
   ];
   return (
-    <CommonSection title={t("service-title")} content={t("service-content")}>
+    <CommonSection title={t("service-title")} content={t("service-content")} className="py-[70px]">
       <div className="flex flex-wrap">
         {services.map((item, index) => (
           <Service
