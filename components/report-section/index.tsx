@@ -5,7 +5,10 @@ export default function ReportSection() {
     const t = useTranslations();
     return (
         <CommonSection>
-            <div className="relative">
+            <div className="relative md:hidden">
+                <Image src="/images/report-mobile.png" alt="report-icon" width={300} height={300} className="object-cover" />
+            </div>
+            <div className="relative hidden md:flex">
                 <div className="flex items-end justify-center w-full h-full">
                     <Image src="/images/report-old.png" alt="report-icon" width={600} height={600} className="object-cover" />
                     <Image src="/images/report-new.png" alt="report-icon" width={450} height={600} className="object-cover" />

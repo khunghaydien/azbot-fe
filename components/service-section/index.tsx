@@ -43,8 +43,20 @@ export default function ServiceSection() {
     },
   ];
   return (
-    <CommonSection title={t("service-title")} content={t("service-content")} className="py-[70px]">
-      <div className="flex flex-wrap">
+    <CommonSection title={t("service-title")} content={t("service-content")} className="py-[70px] ">
+      <div className="flex flex-wrap md:hidden justify-center w-[90%]">
+        {services.map((item, index) => (
+          <Service
+            key={index}
+            icon={item.icon}
+            title={item.title}
+            content={item.content}
+            className={index % 2 === 0 ? "bg-white" : "bg-[#F9F9FC]"}
+          />
+        ))}
+      </div>
+
+      <div className="flex flex-wrap hidden md:flex">
         {services.map((item, index) => (
           <Service
             key={index}

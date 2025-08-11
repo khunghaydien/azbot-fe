@@ -39,6 +39,14 @@ export default function LanguageSelection() {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'right',
+                }}
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
             >
                 <MenuItem onClick={() => onChange("en")}>English</MenuItem>
                 <MenuItem onClick={() => onChange("vi")}>Tiếng Việt</MenuItem>

@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        'md': '768px',
+      },
       colors: {
         "text-base": "var(--text-base)",
         "text-description": "var(--text-description)",

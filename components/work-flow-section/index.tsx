@@ -1,8 +1,14 @@
+"use client";
 import { useTranslations } from "next-intl";
 import CommonSection from "../common-section";
 import WorkFlow from "./work-flow";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-export default function ServiceSection() {
+export default function WorkFlowSection() {
     const t = useTranslations();
     const workFlows = [
         {
@@ -32,7 +38,7 @@ export default function ServiceSection() {
     ];
     return (
         <CommonSection title={t("work-flow-title")} content={t("work-flow-content")}>
-            <div className="flex w-full">
+            <div className="flex w-full hidden md:flex">
                 {workFlows.map((workFlow) => (
                     <WorkFlow
                         key={workFlow.step}
@@ -41,6 +47,29 @@ export default function ServiceSection() {
                         content={workFlow.content}
                         step={workFlow.step} />
                 ))}
+            </div>
+            <div className="w-full md:hidden">
+                <Swiper
+                    spaceBetween={24}
+                    slidesPerView={1}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    pagination={{
+                        clickable: true,
+                        dynamicBullets: true,
+                    }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    className="w-full"
+                >
+                {workFlows.map((workFlow, index) => (
+                    <SwiperSlide key={index}>
+                        <WorkFlow {...workFlow} />
+                    </SwiperSlide>
+                ))}
+                </Swiper>
             </div>
         </CommonSection>
     );

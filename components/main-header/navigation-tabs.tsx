@@ -12,7 +12,13 @@ interface NavigationItem {
   onClick: () => void;
 }
 
-export const NavigationTabs = memo(function NavigationTabs() {
+interface NavigationTabsProps {
+  className?: string;
+}
+
+export const NavigationTabs = memo(function NavigationTabs({
+  className,
+}: NavigationTabsProps) {
   const router = useRouter();
   const t = useTranslations();
 
@@ -57,7 +63,7 @@ export const NavigationTabs = memo(function NavigationTabs() {
 
   return (
     <nav
-      className="flex items-center gap-8"
+      className={`flex items-center gap-8 ${className}`}
       role="navigation"
       aria-label="Main navigation"
     >

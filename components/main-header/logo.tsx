@@ -10,7 +10,7 @@ interface LogoProps {
 export const Logo = memo(function Logo({ className }: LogoProps) {
   return (
     <Image src="/images/AZbot.png" alt="Logo" width={105} height={45}
-      className={clsx("w-[105px] h-[45px] object-contain", className)} />
+      className={clsx("w-[80px] md:w-[105px] h-[30px] md:h-[45px] object-contain", className)} />
   );
 });
 

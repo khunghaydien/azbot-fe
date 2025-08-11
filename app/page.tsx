@@ -23,7 +23,7 @@ export default function page() {
       <SolutionSection />
       <PackageSection />
       <WorkFlowSection />
-      <FeedbackSection /> 
+      <FeedbackSection />
       <ExperienceSection />
       <FooterSection />
       <div className="fixed bottom-8 right-8 flex flex-col items-center justify-center gap-2 z-50">

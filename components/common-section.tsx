@@ -19,8 +19,8 @@ export default function CommonSection({
       <div
         className={`flex items-center justify-center flex-col gap-1 w-full max-w-[1360px]`}
       >
-        <p className="font-bold text-[40px]">{title}</p>
-        <p className="font-bold text-[20px]">{content}</p>
+        <p className="font-bold text-[40px] md:text-start text-center">{title}</p>
+        <p className="font-bold text-[20px] md:text-start text-center">{content}</p>
       </div>
       <div className={`flex items-center justify-center w-full max-w-[1360px]`}>
         {children}

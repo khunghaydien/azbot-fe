@@ -35,7 +35,29 @@ export default function FeedbackSection() {
     ];
     return (
         <CommonSection title={t("feedback-title")} content={t("feedback-content")} className="py-[70px] bg-[#F5F5F6]">
-            <div className="w-full">
+            <div className="w-[90%] md:hidden flex">
+                <Swiper
+                    spaceBetween={24}
+                    slidesPerView={1}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    pagination={{
+                        clickable: true,
+                        dynamicBullets: true,
+                    }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                >
+                {feedbacks.map((feedback, index) => (
+                    <SwiperSlide key={index}>
+                        <Feedback {...feedback} />
+                    </SwiperSlide>
+                ))}
+                </Swiper>
+            </div>
+            <div className="w-full md:flex hidden">
                 <Swiper
                     spaceBetween={24}
                     slidesPerView={3}

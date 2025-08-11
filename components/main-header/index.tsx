@@ -19,12 +19,12 @@ export const MainHeader = memo(function MainHeader({
         ${className}
       `}
     >
-      <div className="flex items-center justify-between p-6 w-full max-w-[1360px] ">
+      <div className="flex items-center justify-between p-3 md:p-6 w-full max-w-[1360px] ">
         <div className="flex items-center gap-12">
           <Logo />
-          <NavigationTabs />
+          <NavigationTabs className="hidden md:flex" />
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2 md:gap-6">
           <ScheduleConsultation />
           <LanguageSelection />
         </div>

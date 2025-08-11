@@ -12,7 +12,7 @@ export default function Service({
 }: ServiceProps) {
   return (
     <div
-      className={`flex flex-col gap-6 flex-1 max-w-[calc(1360px/3)] p-12 ${className}`}
+      className={`flex flex-col gap-6 flex-1 w-[90%] md:w-full max-w-[calc(1360px/3)] p-12 ${className}`}
     >
       {icon}
       <div className="flex flex-col gap-1">
