@@ -18,8 +18,8 @@ export default function Introduction({
             "0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.03)",
         }}
       >
-        <p className="font-bold text-[#FC3C1C]">{title}</p>
-        <p className="">{content}</p>
+        <p className="font-bold text-[#FC3C1C] text-[20px] leading-[26px]">{title}</p>
+        <p className="text-[#1A1C1E] text-[16px] font-normal">{content}</p>
       </div>
     </div>
   );

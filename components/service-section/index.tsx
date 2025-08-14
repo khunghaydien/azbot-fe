@@ -44,7 +44,7 @@ export default function ServiceSection() {
   ];
   return (
     <CommonSection title={t("service-title")} content={t("service-content")} className="py-[70px] ">
-      <div className="flex flex-wrap md:hidden justify-center w-[90%]">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:hidden justify-center w-[90%]">
         {services.map((item, index) => (
           <Service
             key={index}
@@ -56,7 +56,7 @@ export default function ServiceSection() {
         ))}
       </div>
 
-      <div className="flex flex-wrap hidden md:flex">
+      <div className="grid grid-cols-3 hidden md:grid">
         {services.map((item, index) => (
           <Service
             key={index}

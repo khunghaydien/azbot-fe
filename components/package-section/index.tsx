@@ -32,7 +32,7 @@ export default function PackageSection() {
   return (
     <CommonSection title={t("package-title")} content={t("package-content")} className="py-[70px]">
       <div className="flex flex-nowrap w-full items-center justify-center gap-8 md:flex hidden">
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-4 w-full max-w-[500px]">
           {packages.map((pkg) => (
             <Package
               key={pkg.month}
@@ -41,18 +41,21 @@ export default function PackageSection() {
               isActive={currentPackage === pkg.month}
             />
           ))}
-          <button className="bg-primary text-white px-6 py-4 rounded-[42px] w-full uppercase font-bold text-[18px] font-bold">
-            {t("package-button")}
-          </button>
+          <div className="flex items-center justify-center">
+            <button className="bg-primary text-white h-[60px] rounded-[42px] w-full uppercase font-bold text-[18px] font-bold">
+              {t("package-button")}
+            </button>
+          </div>
         </div>
         <Image
           src="/images/package-divide.png"
           alt="Package divide"
           width={25}
           height={531}
+          className="w-[25px] h-[531px]"
         />
-        <div className="flex flex-col gap-4 w-full">
-          <ul className="list-disc pl-4 flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-full max-w-[630px]">
+          <ul className="list-disc pl-4 flex flex-col gap-8">
             <li>
               Tư vấn kịch bản chăm sóc <b>khách hàng cá nhân hóa</b>  dựa trên lịch sử trò chuyện thực tế.
             </li>

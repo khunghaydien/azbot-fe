@@ -60,7 +60,7 @@ export default function FeedbackSection() {
             <div className="w-full md:flex hidden">
                 <Swiper
                     spaceBetween={24}
-                    slidesPerView={3}
+                    slidesPerView={2.5}
                     modules={[Pagination, Navigation, Autoplay]}
                     pagination={{
                         clickable: true,

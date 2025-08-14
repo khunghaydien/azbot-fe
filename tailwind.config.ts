@@ -9,6 +9,10 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['SF Pro Display', 'system-ui', 'sans-serif'],
+        'display': ['SF Pro Display', 'system-ui', 'sans-serif'],
+      },
       screens: {
         'md': '768px',
       },
