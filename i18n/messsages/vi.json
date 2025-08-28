@@ -68,5 +68,31 @@
   "solution-5-description": "Không chỉ trả lời và AZBot còn tư vấn chuyên sâu, gợi ý thêm sản phẩm khéo theo từng chiến địa tăng giá trị đơn hàng trung bình lên đến 35% (theo số liệu thử nghiệm trên 50 doanh nghiệp bán lẻ)",
   "report-title": "Báo cáo",
   "report-increase": "Tăng ~50%",
-  "report-increase-description": "Sau khi áp dụng Azbot từ tháng 6"
+  "report-increase-description": "Sau khi áp dụng Azbot từ tháng 6",
+  "report": {
+    "chart": {
+      "title": "Báo cáo dữ liệu thực tế"
+    },
+    "month": {
+      "jan": "Tháng 1",
+      "feb": "Tháng 2",
+      "mar": "Tháng 3",
+      "apr": "Tháng 4",
+      "may": "Tháng 5",
+      "jun": "Tháng 6",
+      "jul": "Tháng 7",
+      "aug": "Tháng 8",
+      "sep": "Tháng 9",
+      "oct": "Tháng 10",
+      "nov": "Tháng 11",
+      "dec": "Tháng 12"
+    },
+    "quantity": {
+      "title": "Số lượng"
+    },
+    "metrics": {
+      "customers": "Số khách hàng",
+      "orders": "Số đơn hàng"
+    }
+  }
 }

@@ -67,5 +67,25 @@
   "solution-5-title": "Deep consultation - Smart sales suggestions",
   "solution-5-description": "Not only does AZBot answer, but it also provides deep consultation, suggesting additional products cleverly according to each campaign to increase the average order value by up to 35% (based on test data on 50 retail businesses)",
   "report-increase": "Increase ~50%",
-  "report-increase-description": "After applying Azbot from June"
+  "report-increase-description": "After applying Azbot from June",
+  "report": {
+    "chart": {
+      "title": "Actual data report"
+    },
+    "month": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun"
+    },
+    "quantity": {
+      "title": "Quantity"
+    },
+    "metrics": {
+      "customers": "Number of Customers",
+      "orders": "Number of Orders"
+    }
+  }
 }
